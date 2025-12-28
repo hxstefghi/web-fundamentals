@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./practiceLayout2.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <h2 class="logo">LOGO</h2>
+                <div class="navbar-items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-items">
+                <h1>Hello World</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ex?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h1>About</h1>
+            <h3>Sub headline</h3>
+            <div class="about-items">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni fugit doloremque quidem earum quas.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nostrum sapiente praesentium, odio tempore impedit.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="products">
+        <div class="container">
+            <h1>Products</h1>
+            <div class="products-grid">
+                <div class="products-card">
+                    <img src="./product1.jpg" alt="Clothes">
+                    <div class="product-items">
+                        <div class="product-title">
+                            <h2>Product 1</h2>
+                        </div>
+                        <div class="product-price">
+                            <p>P150.00</p>
+                        </div>
+                        <div class="product-details">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque optio aspernatur. Culpa, ipsam error!</p>
+                        </div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="./product1.jpg" alt="Clothes">
+                    <div class="product-items">
+                        <div class="product-title">
+                            <h2>Product 1</h2>
+                        </div>
+                        <div class="product-price">
+                            <p>P150.00</p>
+                        </div>
+                        <div class="product-details">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque optio aspernatur. Culpa, ipsam error!</p>
+                        </div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="./product1.jpg" alt="Clothes">
+                    <div class="product-items">
+                        <div class="product-title">
+                            <h2>Product 1</h2>
+                        </div>
+                        <div class="product-price">
+                            <p>P150.00</p>
+                        </div>
+                        <div class="product-details">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque optio aspernatur. Culpa, ipsam error!</p>
+                        </div>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-items">
+                <img src="./product1.jpg" alt="Profile">
+                <div class="about-info">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore quidem quam vitae illum iusto fuga, voluptas quis perferendis voluptatibus ratione aliquid debitis libero dolorum. Porro cupiditate ducimus vero voluptas totam numquam fugit qui, alias consequatur blanditiis impedit eveniet aut!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <div class="container">
+            <button class="accordion">Accordion 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat earum minima a, quia mollitia.</p>
+            </div>
+
+            <button class="accordion">Accordion 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat earum minima a, quia mollitia.</p>
+            </div>
+
+            <button class="accordion">Accordion 3</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat earum minima a, quia mollitia.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <h3>Logo</h3>
+                    <div class="footer-details">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, iure.</p>
+                        <button>Visit Link</button>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <h3>Links</h3>
+                    <div class="footer-links">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Products</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Socials</h3>
+                    <div class="footer-socials">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let acc = document.getElementsByClassName('accordion');
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+                let panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                }
+            })
+        }
+    </script>
+</body>
+</html>
