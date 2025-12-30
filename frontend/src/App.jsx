@@ -1,6 +1,7 @@
 import List from './List.jsx'
 import Counter from './Counter.jsx'
 import ColorPicker from './ColorPicker.jsx';
+import UpdateObject from './UpdateObject.jsx';
 import './App.css'
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
 
         {/*<Counter />*/}
 
-        <ColorPicker />
+        {/*<ColorPicker />*/}
+        {<UpdateObject />}
     </>
   );
 }
