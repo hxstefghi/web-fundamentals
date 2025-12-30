@@ -1,0 +1,42 @@
+
+.counter-container {
+    text-align: center;
+}
+
+.counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.counter-header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    border: solid black;
+    background-color: aqua;
+    padding: 10px 0px;
+}
+
+.counter-display {
+    text-align: center;
+    font-size: 5rem;
+    margin: 15px 0px;
+}
+
+button {
+    width: 150px;
+    border: none;
+    padding: 18px 10px;
+    background: aqua;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgb(2, 208, 208);
+}

@@ -1,4 +1,5 @@
 import List from './List.jsx'
+import Counter from './Counter.jsx'
 import './App.css'
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
     <>
         {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
         {vegetables.length > 0 ? <List items={vegetables} category="Vegetables" /> : null}
+
+        <Counter />
     </>
   );
 }
