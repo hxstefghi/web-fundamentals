@@ -3,6 +3,8 @@ import Counter from './Counter.jsx'
 import ColorPicker from './ColorPicker.jsx';
 import UpdateObject from './UpdateObject.jsx';
 import './App.css'
+import UpdateArray from './UpdateArray.jsx';
+import ArrayObject from './ArrayObject.jsx';
 
 function App() {
 
@@ -34,7 +36,9 @@ function App() {
         {/*<Counter />*/}
 
         {/*<ColorPicker />*/}
-        {<UpdateObject />}
+        {/*<UpdateObject />*/}
+        {/*<UpdateArray />*/}
+        {<ArrayObject />}
     </>
   );
 }
