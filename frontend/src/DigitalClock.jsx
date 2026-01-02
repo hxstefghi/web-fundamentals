@@ -15,6 +15,10 @@ function DigitalClock() {
         }
     }, [])
 
+    useEffect(() => {
+        document.title = `Time: ${time}`;
+    }, [time])
+
     function formatTime() {
         let hours = time.getHours();
         const minutes = time.getMinutes();
@@ -27,7 +31,7 @@ function DigitalClock() {
     }
 
     function padZero(number) {
-        return(number < 10 ? "0" : "") + number;
+        return (number < 10 ? "0" : "") + number;
     }
 
     return(
