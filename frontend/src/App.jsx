@@ -6,6 +6,7 @@ import './App.css'
 import UpdateArray from './UpdateArray.jsx';
 import ArrayObject from './ArrayObject.jsx';
 import ToDoList from './ToDoList.jsx';
+import DigitalClock from './DigitalClock.jsx';
 
 function App() {
 
@@ -40,7 +41,8 @@ function App() {
         {/*<UpdateObject />*/}
         {/*<UpdateArray />*/}
         {/*<ArrayObject />*/}
-        {<ToDoList />}
+        {/*<ToDoList />*/}
+        {<DigitalClock />}
     </>
   );
 }
