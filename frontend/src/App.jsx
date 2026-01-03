@@ -7,6 +7,7 @@ import UpdateArray from './UpdateArray.jsx';
 import ArrayObject from './ArrayObject.jsx';
 import ToDoList from './ToDoList.jsx';
 import DigitalClock from './DigitalClock.jsx';
+import Stopwatch from './Stopwatch.jsx';
 
 function App() {
 
@@ -42,7 +43,8 @@ function App() {
         {/*<UpdateArray />*/}
         {/*<ArrayObject />*/}
         {/*<ToDoList />*/}
-        {<DigitalClock />}
+        {/*<DigitalClock />*/}
+        {<Stopwatch />}
     </>
   );
 }
